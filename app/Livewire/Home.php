@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Livewire;
+use Livewire\Attributes\Title;
 
 use Livewire\Component;
 class Home extends Component
@@ -15,7 +16,9 @@ class Home extends Component
     public function decrement()
     {
         $this->soma--;
+        
     }
+    #[Title('Home')]
     public function render()
     {
         
